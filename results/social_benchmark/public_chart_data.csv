@@ -1,0 +1,5 @@
+task,assay,split,aerofold_continuous_spearman,baseline_continuous_spearman,aerofold_recall,baseline_recall,baseline_spearman_model,baseline_recall_model,test_count,positive_count,recall_informative,framework_mismatch
+cr9114_full_h1_binding,CR9114 / H1,mutation_extrapolation,0.9132207097058582,0.5308510293700951,0.3076923076923077,0.07692307692307693,SaProt,AntiFold,512,26,True,False
+cr9114_full_h3_binding,CR9114 / H3,mutation_extrapolation,0.8466089069015221,0.7048439631163931,0.7692307692307692,0.4230769230769231,ESM-IF1,ESM-IF1,512,26,True,False
+cr6261_full_h1_binding,CR6261 / H1,mutation_extrapolation,0.9314231820810768,0.6703695857221849,1.0,0.2727272727272727,DiffAb,ESM-IF1; DiffAb,209,11,True,True
+cr6261_full_h9_binding,CR6261 / H9,mutation_extrapolation,0.9603059657151161,0.720581833788591,0.8636363636363636,0.5454545454545454,DiffAb fixed backbone,SaProt,208,11,True,True

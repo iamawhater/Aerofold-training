@@ -1,0 +1,56 @@
+[
+  {
+    "file": "data\\raw\\ch65_qc.csv",
+    "url": "https://raw.githubusercontent.com/amphilli/CH65-comblib/main/Kd_Inference/results_CH65/Kd_processed/20221008_CH65_QCfilt_REPfilt.csv",
+    "sha256": "d526633e53a0c84f6739109d123438db6cc25f1e1e277012082f23156607811f",
+    "bytes": 14747871
+  },
+  {
+    "file": "data\\raw\\ch65_mutations.tsv",
+    "url": "https://raw.githubusercontent.com/amphilli/CH65-comblib/main/Kd_Inference/results_CH65/mutation_list.tsv",
+    "sha256": "3d2a5319b92e08e2481e0d4eee5c3b73442abc972025f56d2d3c4893a955ee25",
+    "bytes": 557
+  },
+  {
+    "file": "data\\raw\\cr9114.csv",
+    "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-fig1-data1-v3.csv",
+    "sha256": "ee31f8fc26fce2730d2ae772e7a095aa334b4c6c5d8e7fbfe4b4a5a1c9a794fe",
+    "bytes": 12258680
+  },
+  {
+    "file": "data\\raw\\cr6261.csv",
+    "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-fig1-data2-v3.csv",
+    "sha256": "6acc7dc8352d694db5f3aedb36e8c4216f61d400b4d85828c056f08580e9c61e",
+    "bytes": 358244
+  },
+  {
+    "file": "data/raw/ch65_config.yaml",
+    "url": "https://raw.githubusercontent.com/amphilli/CH65-comblib/main/Kd_Inference/metadata/config.yaml",
+    "sha256": "a8983bbcd1c19297afe4816f2a4f49f11799c4df7c16b4e1decbfa1ae97e5051",
+    "bytes": 4904
+  },
+  {
+    "file": "data/raw/cr6261_germline.dna",
+    "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-supp6-v3.dna",
+    "sha256": "ec7c23b387e5c5f6737f16857e68017d61612bca609ceb05ade8a28993b6bfe2",
+    "bytes": 44608
+  },
+  {
+    "file": "data/raw/cr6261_somatic.dna",
+    "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-supp7-v3.dna",
+    "sha256": "f4db3945359ea16360a6ecb8e8af9623a35c0c98b2661f561c80b5c2eb293cde",
+    "bytes": 44589
+  },
+  {
+    "file": "data/raw/cr9114_germline.dna",
+    "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-supp4-v3.dna",
+    "sha256": "e8e8ee0e6d6b6562b5fe66c1621e9bc76c3adb23d02c6065f0253f172a88b4ad",
+    "bytes": 44463
+  },
+  {
+    "file": "data/raw/cr9114_somatic.dna",
+    "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-supp5-v3.dna",
+    "sha256": "d8d68a25fb015b025f2d8bc9498ddb02b95a76bbfdda1c5d9f4af3c969d7a7b3",
+    "bytes": 44836
+  }
+]

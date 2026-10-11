@@ -1,0 +1,10 @@
+task,assay,split,aerofold_continuous_spearman,baseline_continuous_spearman,aerofold_recall,baseline_recall,baseline_spearman_model,baseline_recall_model,test_count,positive_count,recall_informative,framework_mismatch
+titeseq_4420_binding,4-4-20 / Fluorescein,mutation_extrapolation,0.30859515126401293,0.2994931926802261,0.5625,0.5,Mutation-additive regression,Mutation-additive regression,302,16,True,False
+ch65_full_ma90_binding,CH65 / MA90,mutation_extrapolation,0.947913626818187,0.7803914663227705,0.5769230769230769,0.3653846153846154,Mutation-additive regression,Mutation-additive regression,512,26,True,False
+ch65_full_si06_binding,CH65 / SI06,mutation_extrapolation,0.9540863540722522,0.783758539943197,0.5576923076923077,0.07692307692307693,Mutation-additive regression,Mutation-additive regression,512,26,True,False
+ch65_full_g189e_binding,CH65 / G189E,mutation_extrapolation,0.9439631457678175,0.7331534726513773,0.4807692307692307,0.13461538461538464,Mutation-additive regression,Mutation-additive regression,512,26,True,False
+cr9114_full_h1_binding,CR9114 / H1,mutation_extrapolation,0.9132207097058582,0.5878260332106879,0.3076923076923077,0.0,Mutation-additive regression,Mutation-additive regression,512,26,True,False
+cr9114_full_h3_binding,CR9114 / H3,mutation_extrapolation,0.8466089069015221,0.8375550194344196,0.7692307692307692,0.5961538461538461,Mutation-additive regression,Mutation-additive regression,512,26,True,False
+cr9114_full_flub_binding,CR9114 / FluB,mutation_extrapolation,-0.027511319088923798,0.2818515539517823,0.046875,0.046875,Mutation-additive regression,Mutation-additive regression,512,512,False,False
+cr6261_full_h1_binding,CR6261 / H1,mutation_extrapolation,0.9314231820810768,0.8045848887954151,1.0,0.5454545454545454,Mutation-additive regression,Mutation-additive regression,209,11,True,False
+cr6261_full_h9_binding,CR6261 / H9,mutation_extrapolation,0.9603059657151161,0.8831538408197446,0.8636363636363636,0.7272727272727273,Mutation-additive regression,Mutation-additive regression,208,11,True,False

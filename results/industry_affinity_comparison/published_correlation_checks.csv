@@ -1,0 +1,33 @@
+task,model,recomputed_whole_library_spearman,published_rounded_spearman
+cr9114_full_h1_binding,ESM-IF1,0.6457769552657562,0.65
+cr9114_full_h1_binding,ProteinMPNN,0.6070483528725806,0.61
+cr9114_full_h1_binding,AntiFold,0.4191475536920638,0.42
+cr9114_full_h1_binding,SaProt,0.4774564417444348,0.48
+cr9114_full_h1_binding,ESM-2,-0.02282165792378138,-0.02
+cr9114_full_h1_binding,FoldX,0.6371798909324664,0.64
+cr9114_full_h1_binding,DiffAb,0.0003404090742144259,0.0
+cr9114_full_h1_binding,DiffAb fixed backbone,-0.002154960611305165,0.0
+cr9114_full_h3_binding,ESM-IF1,0.49375982297882576,0.49
+cr9114_full_h3_binding,ProteinMPNN,0.415445523908327,0.42
+cr9114_full_h3_binding,AntiFold,0.37425739038401984,0.37
+cr9114_full_h3_binding,SaProt,0.27907062162819973,0.28
+cr9114_full_h3_binding,ESM-2,-0.016995586134715225,-0.02
+cr9114_full_h3_binding,FoldX,0.2856959941442709,0.29
+cr9114_full_h3_binding,DiffAb,-0.0070569266760489415,-0.01
+cr9114_full_h3_binding,DiffAb fixed backbone,-0.0014217142172955944,0.0
+cr6261_full_h1_binding,ESM-IF1,0.5948923459337827,0.59
+cr6261_full_h1_binding,ProteinMPNN,0.5867535763198417,0.59
+cr6261_full_h1_binding,AntiFold,0.12403136882978603,0.12
+cr6261_full_h1_binding,SaProt,0.5347744836321432,0.53
+cr6261_full_h1_binding,ESM-2,0.23205229904800703,0.23
+cr6261_full_h1_binding,FoldX,0.5946881785168763,0.59
+cr6261_full_h1_binding,DiffAb,0.6735901543219421,0.67
+cr6261_full_h1_binding,DiffAb fixed backbone,0.5380203492471041,0.54
+cr6261_full_h9_binding,ESM-IF1,0.5396982470496983,0.54
+cr6261_full_h9_binding,ProteinMPNN,0.6395718951221879,0.64
+cr6261_full_h9_binding,AntiFold,0.2720064569218164,0.27
+cr6261_full_h9_binding,SaProt,0.6008115753920631,0.6
+cr6261_full_h9_binding,ESM-2,0.38022198956277353,0.38
+cr6261_full_h9_binding,FoldX,0.32252462822264,0.32
+cr6261_full_h9_binding,DiffAb,0.6139324941774295,0.61
+cr6261_full_h9_binding,DiffAb fixed backbone,0.7595172958614652,0.76

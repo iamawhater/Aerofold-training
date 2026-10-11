@@ -1,0 +1,7 @@
+.venv/
+.work/
+cache/
+__pycache__/
+.ipynb_checkpoints/
+archive/
+results/multifamily/benchmark_audit.json

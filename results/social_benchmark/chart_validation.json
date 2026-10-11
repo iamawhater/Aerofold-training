@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "plot_rows": {
+    "additive": 9,
+    "public": 4
+  },
+  "plotted_split": "mutation_extrapolation",
+  "tweet_characters": 260,
+  "checks": [
+    "saved means agree with two seed runs",
+    "recall recomputed as hits / positives",
+    "24-pick budget verified",
+    "public baselines equal eight-comparator maxima",
+    "all nine internal assays included",
+    "rendered text inside canvas"
+  ],
+  "input_sha256": {
+    "results\\multifamily\\benchmark_summary.csv": "43ff0e93caaeb6234a1fb56627ab926f6064176b0b84e198a1a6ee3d6497b8fb",
+    "results\\multifamily\\benchmark_runs.csv": "fd18560b3dc5d03d614c5cacdcf5df2bbf58f25ac7ce36164ed707a18986b6fb",
+    "results\\industry_affinity_comparison\\comparison_overview.csv": "8530cb74424ccde28893d30e955f4cccb74f3636c9608c3f1bbffb6432d677a7",
+    "results\\industry_affinity_comparison\\matched_test_summary.csv": "b2cc782681bf0db34cdaa72363a806458d77d192e6c2cb00246ae988d2580aed",
+    "results\\industry_affinity_comparison\\matched_test_runs.csv": "76d3eebc9143ce4ef7bc71291850177571ed2682f09d2f0528961c6ee217d79e"
+  }
+}

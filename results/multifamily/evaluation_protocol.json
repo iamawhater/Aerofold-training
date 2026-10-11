@@ -1,0 +1,42 @@
+{
+  "version": "aerofold-attention-gpu-5",
+  "code_sha256": "cc2efb77edd917107d9e8839d096ec7f38fa2913d4d2da58eca6d618fe70d57e",
+  "seeds": [
+    314159,
+    271828
+  ],
+  "tasks": [
+    "titeseq_4420_binding",
+    "ch65_full_ma90_binding",
+    "ch65_full_si06_binding",
+    "ch65_full_g189e_binding",
+    "cr9114_full_h1_binding",
+    "cr9114_full_h3_binding",
+    "cr9114_full_flub_binding",
+    "cr6261_full_h1_binding",
+    "cr6261_full_h9_binding"
+  ],
+  "splits": [
+    "random",
+    "mutation_extrapolation"
+  ],
+  "test_limit": 512,
+  "training": "Every eligible outer-development measurement; internal selection folds capped for CPU computation",
+  "inner_training_cap": 4000,
+  "inner_validation_cap": 768,
+  "top_k": 24,
+  "source_transfer": "Entire benchmark antibody family excluded from pretraining, including every antigen assay",
+  "target_selection": "Only inner random and higher-mutation validation chooses heads, blend weights and floor cutoffs",
+  "attention": "Two layers, four heads, width 32, target-trained with additive skip and top-binder auxiliary loss",
+  "selection_objective": "0.4 Spearman + 0.6 attainable top-24 hit efficiency",
+  "attention_updates": 192,
+  "attention_gate_margin": 0.005,
+  "neural_training_device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+  "torch_version": "2.11.0+cu128",
+  "cuda_version": "12.8",
+  "require_gpu": true,
+  "attention_ablation": "Matched attention-free ensemble has identical screening trees, folds and selection objective",
+  "metrics": "Tie-inclusive measured top-5% positives; stable top-24 screening; continuous and floor-aware Spearman",
+  "status": "Retrospective rerun on previously inspected public-library tests; no outer-label tuning of this frozen protocol"
+}

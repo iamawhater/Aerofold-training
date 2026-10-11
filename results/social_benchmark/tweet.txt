@@ -1,0 +1,5 @@
+AeroFold: supervised antibody affinity ranking across 4-4-20, CH65, CR9114 & CR6261.
+
+Charts: retrospective higher-mutation holdouts, Spearman + top-5% recall (24 picks).
+
+ML/bio folks: how do these results look? Which baselines or split designs would you add?

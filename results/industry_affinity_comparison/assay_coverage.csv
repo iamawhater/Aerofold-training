@@ -1,0 +1,10 @@
+task,matched_public_scores_available,reason
+titeseq_4420_binding,False,No compatible per-variant score release located in the checked AbBiBench and FLAb releases
+ch65_full_ma90_binding,False,No compatible per-variant score release located in the checked AbBiBench and FLAb releases
+ch65_full_si06_binding,False,No compatible per-variant score release located in the checked AbBiBench and FLAb releases
+ch65_full_g189e_binding,False,No compatible per-variant score release located in the checked AbBiBench and FLAb releases
+cr9114_full_h1_binding,True,Pinned AbBiBench scores with sequence identifiers
+cr9114_full_h3_binding,True,Pinned AbBiBench scores with sequence identifiers
+cr9114_full_flub_binding,False,No compatible per-variant score release located in the checked AbBiBench and FLAb releases
+cr6261_full_h1_binding,True,Pinned AbBiBench scores with sequence identifiers
+cr6261_full_h9_binding,True,Pinned AbBiBench scores with sequence identifiers

@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "evaluated_utc": "2026-10-03T02:54:55.975274+00:00",
+  "public_source_commit": "7d9c73e23c3c535fbb73ef073cf2fb9633e1fda8",
+  "pipeline_version": "aerofold-attention-gpu-5",
+  "pipeline_code_sha256": "cc2efb77edd917107d9e8839d096ec7f38fa2913d4d2da58eca6d618fe70d57e",
+  "protected_files_unchanged": 78,
+  "verified_source_file_hashes": 37,
+  "matched_assays": 4,
+  "external_comparators": 8,
+  "assay_split_seed_model_rows": 144,
+  "paired_prediction_rows": 57816,
+  "independent_metric_calculation": "All runs passed: average-rank Pearson and scalar top-k confusion-count arithmetic",
+  "frozen_aerofold_metrics_reproduced": true,
+  "published_whole_library_correlations_reproduced": true,
+  "test_identity_and_label_validation": "Unique genotype joins; full measured-library coverage; experimental labels agree to 1e-10",
+  "no_model_training_or_selection_performed": true,
+  "cr6261_framework_difference": "Local Q1/Q113; public E1/K113 (one-based heavy-chain positions)",
+  "excluded_public_models": {
+    "Boltz-2": "No sequence or canonical variant identifiers in downloaded confidence-score files",
+    "AlphaFold 3": "Ordinal mutant identifiers; no verified genotype crosswalk"
+  },
+  "important_limits": [
+    "AeroFold uses target-assay supervision; published comparators use pretrained likelihood or energy proxies without target-label fitting in this evaluation.",
+    "CR6261 genotypes and experimental labels match, but two fixed framework residues differ between model inputs.",
+    "Two seeds only; means and ranges are descriptive, not confidence intervals or proof of general industry superiority.",
+    "Public libraries and previously inspected retrospective test partitions; no independent prospective affinity validation.",
+    "Pretraining exposure cannot be audited from score CSVs. Light-chain inputs are not recorded in these public CSVs.",
+    "Best public comparator is a post-hoc per-metric reference, not a selected or trained ensemble."
+  ],
+  "output_sha256": {
+    "assay_coverage.csv": "8ce36e4d6a88041b6ce374cd72cd251e924b63551a2d8d6424a17cb8f712adab",
+    "comparison_overview.csv": "8530cb74424ccde28893d30e955f4cccb74f3636c9608c3f1bbffb6432d677a7",
+    "matched_test_predictions.csv": "031e5947e43b77b0c77a97475bfe9c72ddae8bf3da7d2db89e530499dc6dc4c5",
+    "matched_test_runs.csv": "76d3eebc9143ce4ef7bc71291850177571ed2682f09d2f0528961c6ee217d79e",
+    "matched_test_summary.csv": "b2cc782681bf0db34cdaa72363a806458d77d192e6c2cb00246ae988d2580aed",
+    "published_correlation_checks.csv": "8ec6eac5c28324354ca10085e4d1a679ef7b26159ffe5358a937e2b4bc9dd37a"
+  }
+}

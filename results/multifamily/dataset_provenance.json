@@ -1,0 +1,922 @@
+{
+  "sources": [
+    {
+      "file": "data\\raw\\ch65_qc.csv",
+      "url": "https://raw.githubusercontent.com/amphilli/CH65-comblib/main/Kd_Inference/results_CH65/Kd_processed/20221008_CH65_QCfilt_REPfilt.csv",
+      "sha256": "d526633e53a0c84f6739109d123438db6cc25f1e1e277012082f23156607811f",
+      "bytes": 14747871
+    },
+    {
+      "file": "data\\raw\\ch65_mutations.tsv",
+      "url": "https://raw.githubusercontent.com/amphilli/CH65-comblib/main/Kd_Inference/results_CH65/mutation_list.tsv",
+      "sha256": "3d2a5319b92e08e2481e0d4eee5c3b73442abc972025f56d2d3c4893a955ee25",
+      "bytes": 557
+    },
+    {
+      "file": "data\\raw\\cr9114.csv",
+      "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-fig1-data1-v3.csv",
+      "sha256": "ee31f8fc26fce2730d2ae772e7a095aa334b4c6c5d8e7fbfe4b4a5a1c9a794fe",
+      "bytes": 12258680
+    },
+    {
+      "file": "data\\raw\\cr6261.csv",
+      "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-fig1-data2-v3.csv",
+      "sha256": "6acc7dc8352d694db5f3aedb36e8c4216f61d400b4d85828c056f08580e9c61e",
+      "bytes": 358244
+    },
+    {
+      "file": "data/raw/ch65_config.yaml",
+      "url": "https://raw.githubusercontent.com/amphilli/CH65-comblib/main/Kd_Inference/metadata/config.yaml",
+      "sha256": "a8983bbcd1c19297afe4816f2a4f49f11799c4df7c16b4e1decbfa1ae97e5051",
+      "bytes": 4904
+    },
+    {
+      "file": "data/raw/cr6261_germline.dna",
+      "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-supp6-v3.dna",
+      "sha256": "ec7c23b387e5c5f6737f16857e68017d61612bca609ceb05ade8a28993b6bfe2",
+      "bytes": 44608
+    },
+    {
+      "file": "data/raw/cr6261_somatic.dna",
+      "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-supp7-v3.dna",
+      "sha256": "f4db3945359ea16360a6ecb8e8af9623a35c0c98b2661f561c80b5c2eb293cde",
+      "bytes": 44589
+    },
+    {
+      "file": "data/raw/cr9114_germline.dna",
+      "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-supp4-v3.dna",
+      "sha256": "e8e8ee0e6d6b6562b5fe66c1621e9bc76c3adb23d02c6065f0253f172a88b4ad",
+      "bytes": 44463
+    },
+    {
+      "file": "data/raw/cr9114_somatic.dna",
+      "url": "https://cdn.elifesciences.org/articles/71393/elife-71393-supp5-v3.dna",
+      "sha256": "d8d68a25fb015b025f2d8bc9498ddb02b95a76bbfdda1c5d9f4af3c969d7a7b3",
+      "bytes": 44836
+    }
+  ],
+  "tasks": {
+    "ch65_full_ma90_binding": {
+      "family": "ch65",
+      "antigen": "MA90",
+      "reference_heavy": "QVQLVQSGAEVKKPGASVKVSCKASGYTFTGYYMHWVRQAPGQGLEWMGWINPNSGGTNYAQKFQGWVTMTRDTSISTAYMELSRLRSDDTAVYYCARGGLEPRSVDYYYYGMDVWGQGTTVTVSS",
+      "reference_light": "QSVLTQPPSVSVAPGQTARITCGGNNIGSKSVHWYQQKPGQAPVLVVYDDSDRPSGIPERFSGSNSGNTATLTISRVEAGDEADYYCQVWDSSSDHVVFGGGTKLTVL",
+      "score": "pKd = -log10(Kd in M); higher is better",
+      "source": "data\\raw\\ch65_qc.csv",
+      "mutations": [
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 25,
+          "ancestral": "N",
+          "descendant": "D"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 28,
+          "ancestral": "S",
+          "descendant": "R"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 34,
+          "ancestral": "Y",
+          "descendant": "N"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 47,
+          "ancestral": "Y",
+          "descendant": "C"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 48,
+          "ancestral": "D",
+          "descendant": "Y"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 97,
+          "ancestral": "V",
+          "descendant": "I"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 30,
+          "ancestral": "G",
+          "descendant": "D"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 32,
+          "ancestral": "Y",
+          "descendant": "H"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 33,
+          "ancestral": "M",
+          "descendant": "I"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 34,
+          "ancestral": "H",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 51,
+          "ancestral": "N",
+          "descendant": "H"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 56,
+          "ancestral": "G",
+          "descendant": "D"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 82,
+          "ancestral": "L",
+          "descendant": "V"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 83,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 84,
+          "ancestral": "R",
+          "descendant": "G"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 86,
+          "ancestral": "R",
+          "descendant": "K"
+        }
+      ]
+    },
+    "ch65_full_si06_binding": {
+      "family": "ch65",
+      "antigen": "SI06",
+      "reference_heavy": "QVQLVQSGAEVKKPGASVKVSCKASGYTFTGYYMHWVRQAPGQGLEWMGWINPNSGGTNYAQKFQGWVTMTRDTSISTAYMELSRLRSDDTAVYYCARGGLEPRSVDYYYYGMDVWGQGTTVTVSS",
+      "reference_light": "QSVLTQPPSVSVAPGQTARITCGGNNIGSKSVHWYQQKPGQAPVLVVYDDSDRPSGIPERFSGSNSGNTATLTISRVEAGDEADYYCQVWDSSSDHVVFGGGTKLTVL",
+      "score": "pKd = -log10(Kd in M); higher is better",
+      "source": "data\\raw\\ch65_qc.csv",
+      "mutations": [
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 25,
+          "ancestral": "N",
+          "descendant": "D"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 28,
+          "ancestral": "S",
+          "descendant": "R"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 34,
+          "ancestral": "Y",
+          "descendant": "N"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 47,
+          "ancestral": "Y",
+          "descendant": "C"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 48,
+          "ancestral": "D",
+          "descendant": "Y"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 97,
+          "ancestral": "V",
+          "descendant": "I"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 30,
+          "ancestral": "G",
+          "descendant": "D"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 32,
+          "ancestral": "Y",
+          "descendant": "H"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 33,
+          "ancestral": "M",
+          "descendant": "I"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 34,
+          "ancestral": "H",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 51,
+          "ancestral": "N",
+          "descendant": "H"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 56,
+          "ancestral": "G",
+          "descendant": "D"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 82,
+          "ancestral": "L",
+          "descendant": "V"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 83,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 84,
+          "ancestral": "R",
+          "descendant": "G"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 86,
+          "ancestral": "R",
+          "descendant": "K"
+        }
+      ]
+    },
+    "ch65_full_g189e_binding": {
+      "family": "ch65",
+      "antigen": "G189E",
+      "reference_heavy": "QVQLVQSGAEVKKPGASVKVSCKASGYTFTGYYMHWVRQAPGQGLEWMGWINPNSGGTNYAQKFQGWVTMTRDTSISTAYMELSRLRSDDTAVYYCARGGLEPRSVDYYYYGMDVWGQGTTVTVSS",
+      "reference_light": "QSVLTQPPSVSVAPGQTARITCGGNNIGSKSVHWYQQKPGQAPVLVVYDDSDRPSGIPERFSGSNSGNTATLTISRVEAGDEADYYCQVWDSSSDHVVFGGGTKLTVL",
+      "score": "pKd = -log10(Kd in M); higher is better",
+      "source": "data\\raw\\ch65_qc.csv",
+      "mutations": [
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 25,
+          "ancestral": "N",
+          "descendant": "D"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 28,
+          "ancestral": "S",
+          "descendant": "R"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 34,
+          "ancestral": "Y",
+          "descendant": "N"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 47,
+          "ancestral": "Y",
+          "descendant": "C"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 48,
+          "ancestral": "D",
+          "descendant": "Y"
+        },
+        {
+          "chain": "light_sequence",
+          "position_zero_based": 97,
+          "ancestral": "V",
+          "descendant": "I"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 30,
+          "ancestral": "G",
+          "descendant": "D"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 32,
+          "ancestral": "Y",
+          "descendant": "H"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 33,
+          "ancestral": "M",
+          "descendant": "I"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 34,
+          "ancestral": "H",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 51,
+          "ancestral": "N",
+          "descendant": "H"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 56,
+          "ancestral": "G",
+          "descendant": "D"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 82,
+          "ancestral": "L",
+          "descendant": "V"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 83,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 84,
+          "ancestral": "R",
+          "descendant": "G"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 86,
+          "ancestral": "R",
+          "descendant": "K"
+        }
+      ]
+    },
+    "cr9114_full_h1_binding": {
+      "family": "cr9114",
+      "antigen": "h1",
+      "reference_heavy": "QVQLVQSGAEVKKPGSSVKVSCKASGGTFSSYAISWVRQAPGQGLEWMGGIIPIFGTANYAQKFQGRVTITADKSTSTAYMELSSLRSEDTAVYYCARHGNYYYYYGMDVWGQGTTVTVSS",
+      "reference_light": "SYVLTQPPAVSGTPGQRVTISCSGSDSNIGRRSVNWYQQFPGTAPKLLIYSNDQRPSVVPDRFSGSKSGTSASLAISGLQSEDEAEYYCAAWDDSLKGAVFGGGTQLTVL",
+      "score": "pKd = -log10(Kd in M); higher is better",
+      "source": "data\\raw\\cr9114.csv",
+      "mutations": [
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 28,
+          "ancestral": "F",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 29,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 30,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 51,
+          "ancestral": "I",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 56,
+          "ancestral": "T",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 57,
+          "ancestral": "A",
+          "descendant": "T"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 58,
+          "ancestral": "N",
+          "descendant": "A"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 70,
+          "ancestral": "T",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 73,
+          "ancestral": "K",
+          "descendant": "I"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 74,
+          "ancestral": "S",
+          "descendant": "F"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 75,
+          "ancestral": "T",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 76,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 83,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 86,
+          "ancestral": "R",
+          "descendant": "T"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 94,
+          "ancestral": "Y",
+          "descendant": "F"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 105,
+          "ancestral": "Y",
+          "descendant": "S"
+        }
+      ]
+    },
+    "cr9114_full_h3_binding": {
+      "family": "cr9114",
+      "antigen": "h3",
+      "reference_heavy": "QVQLVQSGAEVKKPGSSVKVSCKASGGTFSSYAISWVRQAPGQGLEWMGGIIPIFGTANYAQKFQGRVTITADKSTSTAYMELSSLRSEDTAVYYCARHGNYYYYYGMDVWGQGTTVTVSS",
+      "reference_light": "SYVLTQPPAVSGTPGQRVTISCSGSDSNIGRRSVNWYQQFPGTAPKLLIYSNDQRPSVVPDRFSGSKSGTSASLAISGLQSEDEAEYYCAAWDDSLKGAVFGGGTQLTVL",
+      "score": "pKd = -log10(Kd in M); higher is better",
+      "source": "data\\raw\\cr9114.csv",
+      "mutations": [
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 28,
+          "ancestral": "F",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 29,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 30,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 51,
+          "ancestral": "I",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 56,
+          "ancestral": "T",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 57,
+          "ancestral": "A",
+          "descendant": "T"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 58,
+          "ancestral": "N",
+          "descendant": "A"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 70,
+          "ancestral": "T",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 73,
+          "ancestral": "K",
+          "descendant": "I"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 74,
+          "ancestral": "S",
+          "descendant": "F"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 75,
+          "ancestral": "T",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 76,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 83,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 86,
+          "ancestral": "R",
+          "descendant": "T"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 94,
+          "ancestral": "Y",
+          "descendant": "F"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 105,
+          "ancestral": "Y",
+          "descendant": "S"
+        }
+      ]
+    },
+    "cr9114_full_flub_binding": {
+      "family": "cr9114",
+      "antigen": "fluB",
+      "reference_heavy": "QVQLVQSGAEVKKPGSSVKVSCKASGGTFSSYAISWVRQAPGQGLEWMGGIIPIFGTANYAQKFQGRVTITADKSTSTAYMELSSLRSEDTAVYYCARHGNYYYYYGMDVWGQGTTVTVSS",
+      "reference_light": "SYVLTQPPAVSGTPGQRVTISCSGSDSNIGRRSVNWYQQFPGTAPKLLIYSNDQRPSVVPDRFSGSKSGTSASLAISGLQSEDEAEYYCAAWDDSLKGAVFGGGTQLTVL",
+      "score": "pKd = -log10(Kd in M); higher is better",
+      "source": "data\\raw\\cr9114.csv",
+      "mutations": [
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 28,
+          "ancestral": "F",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 29,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 30,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 51,
+          "ancestral": "I",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 56,
+          "ancestral": "T",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 57,
+          "ancestral": "A",
+          "descendant": "T"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 58,
+          "ancestral": "N",
+          "descendant": "A"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 70,
+          "ancestral": "T",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 73,
+          "ancestral": "K",
+          "descendant": "I"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 74,
+          "ancestral": "S",
+          "descendant": "F"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 75,
+          "ancestral": "T",
+          "descendant": "S"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 76,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 83,
+          "ancestral": "S",
+          "descendant": "N"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 86,
+          "ancestral": "R",
+          "descendant": "T"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 94,
+          "ancestral": "Y",
+          "descendant": "F"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 105,
+          "ancestral": "Y",
+          "descendant": "S"
+        }
+      ]
+    },
+    "cr6261_full_h1_binding": {
+      "family": "cr6261",
+      "antigen": "h1",
+      "reference_heavy": "QVQLVQSGAEVKKPGSSVKVSCKASGGTFSSYAISWVRQAPGQGLEWMGGIIPIFGTANYAQKFQGRVTITADKSTSTAYMELSSLRSEDTAVYYCAKHMGYQLRETMDVWGQGTTVTVSS",
+      "reference_light": "QSVLTQPPSVSAAPGQKVTISCSGSSSNIGNDYVSWYQQLPGTAPKLLIYDNNKRPSGIPDRFSGSKSGTSATLGITGLQTGDEANYYCATWDRRPTAYVVFGGGTKLTVL",
+      "score": "pKd = -log10(Kd in M); higher is better",
+      "source": "data\\raw\\cr6261.csv",
+      "mutations": [
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 27,
+          "ancestral": "T",
+          "descendant": "P"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 29,
+          "ancestral": "S",
+          "descendant": "R"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 57,
+          "ancestral": "A",
+          "descendant": "T"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 58,
+          "ancestral": "N",
+          "descendant": "K"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 61,
+          "ancestral": "Q",
+          "descendant": "P"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 73,
+          "ancestral": "K",
+          "descendant": "D"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 74,
+          "ancestral": "S",
+          "descendant": "F"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 75,
+          "ancestral": "T",
+          "descendant": "A"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 76,
+          "ancestral": "S",
+          "descendant": "G"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 78,
+          "ancestral": "A",
+          "descendant": "V"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 103,
+          "ancestral": "L",
+          "descendant": "V"
+        }
+      ]
+    },
+    "cr6261_full_h9_binding": {
+      "family": "cr6261",
+      "antigen": "h9",
+      "reference_heavy": "QVQLVQSGAEVKKPGSSVKVSCKASGGTFSSYAISWVRQAPGQGLEWMGGIIPIFGTANYAQKFQGRVTITADKSTSTAYMELSSLRSEDTAVYYCAKHMGYQLRETMDVWGQGTTVTVSS",
+      "reference_light": "QSVLTQPPSVSAAPGQKVTISCSGSSSNIGNDYVSWYQQLPGTAPKLLIYDNNKRPSGIPDRFSGSKSGTSATLGITGLQTGDEANYYCATWDRRPTAYVVFGGGTKLTVL",
+      "score": "pKd = -log10(Kd in M); higher is better",
+      "source": "data\\raw\\cr6261.csv",
+      "mutations": [
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 27,
+          "ancestral": "T",
+          "descendant": "P"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 29,
+          "ancestral": "S",
+          "descendant": "R"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 57,
+          "ancestral": "A",
+          "descendant": "T"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 58,
+          "ancestral": "N",
+          "descendant": "K"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 61,
+          "ancestral": "Q",
+          "descendant": "P"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 73,
+          "ancestral": "K",
+          "descendant": "D"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 74,
+          "ancestral": "S",
+          "descendant": "F"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 75,
+          "ancestral": "T",
+          "descendant": "A"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 76,
+          "ancestral": "S",
+          "descendant": "G"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 78,
+          "ancestral": "A",
+          "descendant": "V"
+        },
+        {
+          "chain": "heavy_sequence",
+          "position_zero_based": 103,
+          "ancestral": "L",
+          "descendant": "V"
+        }
+      ]
+    },
+    "titeseq_4420_binding": {
+      "family": "4420",
+      "antigen": "fluorescein",
+      "reference_heavy": "EVKLDETGGGLVQPGRPMKLSCVASGFTFSDYWMNWVRQSPEKGLEWVAQIRNKPYNYETYYSDSVKGRFTISRDDSKSSVYLQMNNLRVEDMGIYYCTGSYYGMDYWGQGTSVTVS",
+      "reference_light": "DVVMTQTPLSLPVSLGDQASISCRSSQSLVHSNGNTYLRWYLQKPGQSPKVLIYKVSNRFSGVPDRFSGSGSGTDFTLKISRVEAEDLGVYFCSQSTHVPWTFGGGTKLEIK",
+      "score": "Original local pKd; higher is better",
+      "source": "data/titeseq_4420_binding.csv"
+    }
+  },
+  "checks": [
+    {
+      "task": "ch65_full_ma90_binding",
+      "source_rows": 65535,
+      "finite_measured_rows": 65530,
+      "unique_sequences": 65530,
+      "floor_fraction": 1.5260186174271325e-05,
+      "max_mutations": 16
+    },
+    {
+      "task": "ch65_full_si06_binding",
+      "source_rows": 65535,
+      "finite_measured_rows": 64619,
+      "unique_sequences": 64619,
+      "floor_fraction": 0.4878441325306798,
+      "max_mutations": 16
+    },
+    {
+      "task": "ch65_full_g189e_binding",
+      "source_rows": 65535,
+      "finite_measured_rows": 63840,
+      "unique_sequences": 63840,
+      "floor_fraction": 0.1480576441102757,
+      "max_mutations": 16
+    },
+    {
+      "task": "cr9114_full_h1_binding",
+      "source_rows": 65536,
+      "finite_measured_rows": 65094,
+      "unique_sequences": 65094,
+      "floor_fraction": 0.025732018311979597,
+      "max_mutations": 16
+    },
+    {
+      "task": "cr9114_full_h3_binding",
+      "source_rows": 65536,
+      "finite_measured_rows": 65535,
+      "unique_sequences": 65535,
+      "floor_fraction": 0.8905317769130998,
+      "max_mutations": 16
+    },
+    {
+      "task": "cr9114_full_flub_binding",
+      "source_rows": 65536,
+      "finite_measured_rows": 65534,
+      "unique_sequences": 65534,
+      "floor_fraction": 0.9969786675618763,
+      "max_mutations": 16
+    },
+    {
+      "task": "cr6261_full_h1_binding",
+      "source_rows": 1917,
+      "finite_measured_rows": 1887,
+      "unique_sequences": 1887,
+      "floor_fraction": 0.11340752517223106,
+      "max_mutations": 11
+    },
+    {
+      "task": "cr6261_full_h9_binding",
+      "source_rows": 1917,
+      "finite_measured_rows": 1842,
+      "unique_sequences": 1842,
+      "floor_fraction": 0.20195439739413681,
+      "max_mutations": 11
+    }
+  ]
+}
